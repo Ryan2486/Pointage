@@ -22,6 +22,9 @@ public class RoomModel {
   @Column(name = "room_abr")
   private String room_abr;
 
+  @Column(name = "room_capacity")
+  private int room_capacity;
+
   // getter and setter
   public long getRoom_id() {
     return room_id;
@@ -45,6 +48,14 @@ public class RoomModel {
 
   public void setRoom_abr(String room_abr) {
     this.room_abr = room_abr;
+  }
+
+  public int getRoom_capacity() {
+    return room_capacity;
+  }
+
+  public void setRoom_capacity(int room_capacity) {
+    this.room_capacity = room_capacity;
   }
 
 }
